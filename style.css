@@ -1,0 +1,23 @@
+.container{
+    height:90%;
+    width:90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.meow{
+    margin: auto;
+    height: 600px;
+    width: 600px;
+    color: brown;
+    border: 2px solid red;
+}
+
+
+.dead{
+    text-align: center;
+    color: red;
+    font-size: 100px;
+}
