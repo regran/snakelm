@@ -119,10 +119,10 @@ subscriptions model =
       Sub.batch [Time.every (100) (tick model), Keyboard.ups (key model)]
 
 left model =
-    if model.xchange == 0 then Left else Right
-up model = if model.ychange == 0 then Up else Down
-down model = if model.ychange == 0 then Down else Up
-right model = if model.xchange == 0 then Right else Left
+    if model.xchange >= 0 then Left else Right
+up model = if model.ychange <= 0 then Up else Down
+down model = if model.ychange >= 0 then Down else Up
+right model = if model.xchange >= 0 then Right else Left
 
 key : Model -> KeyCode ->  Msg
 key m code =
